@@ -888,21 +888,21 @@ def initialize_system(pdf_directory: str = "./data/pdfs"):
     
     print("=== Initializing Financial Q&A System ===")
 
-    # Step 1: Load documents - FIXED DATA
-  #  documents = {
-  #      'tcs_2024': {
-  #          'income': "TCS Corp 2024 Income Statement: Total revenue $4.13 billion, Net income $530 million, Operating expenses $1.5 billion, Gross profit $2.63 billion.",
-  #          'balance': "TCS Corp 2024 Balance Sheet: Total assets $7.0 billion, Total debt $2.0 billion, Shareholders equity $3.5 billion, Cash and equivalents $800 million.",
-  #          'general': "TCS Corp is a leading technology services company. This annual report covers fiscal year 2024 performance."
-  #      },
-  #      'tcs_2025': {
-  #          'income': "TCS Corp 2025 Income Statement: Total revenue $4.9 billion, Net income $800 million, Operating expenses $1.7 billion, Gross profit $3.2 billion.",
-  #          'balance': "TCS Corp 2025 Balance Sheet: Total assets $8.0 billion, Total debt $2.2 billion, Shareholders equity $4.0 billion, Cash and equivalents $1.1 billion.",
-  #          'general': "TCS Corp continued growth in 2025 with strong performance across all business segments."
-  #      }
-  #  }
+   #Step 1: Load documents - FIXED DATA
+    documents = {
+        'tcs_2024': {
+            'income': "TCS Corp 2024 Income Statement: Total revenue $4.13 billion, Net income $530 million, Operating expenses $1.5 billion, Gross profit $2.63 billion.",
+            'balance': "TCS Corp 2024 Balance Sheet: Total assets $7.0 billion, Total debt $2.0 billion, Shareholders equity $3.5 billion, Cash and equivalents $800 million.",
+            'general': "TCS Corp is a leading technology services company. This annual report covers fiscal year 2024 performance."
+        },
+        'tcs_2025': {
+            'income': "TCS Corp 2025 Income Statement: Total revenue $4.9 billion, Net income $800 million, Operating expenses $1.7 billion, Gross profit $3.2 billion.",
+            'balance': "TCS Corp 2025 Balance Sheet: Total assets $8.0 billion, Total debt $2.2 billion, Shareholders equity $4.0 billion, Cash and equivalents $1.1 billion.",
+            'general': "TCS Corp continued growth in 2025 with strong performance across all business segments."
+        }
+    }
 
-    documents = read_pdfs_from_directory(pdf_directory)
+   # documents = read_pdfs_from_directory(pdf_directory)
 
     if not documents:
         raise Exception("No documents could be loaded")

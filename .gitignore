@@ -39,7 +39,7 @@ Thumbs.db
 .streamlit/secrets.toml
 
 # Data files (if any)
-data/
-*.csv
-*.pdf
-*.xlsx
+#data/
+#*.csv
+#*.pdf
+#*.xlsx
