@@ -1,3 +1,4 @@
+pip>=25.0
 numpy==1.26.4
 torch==2.5.0
 sentence-transformers==2.7.0
