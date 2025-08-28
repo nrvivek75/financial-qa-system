@@ -1,16 +1,17 @@
-streamlit==1.28.1
 numpy==1.26.4
 torch==2.5.0
 sentence-transformers==2.7.0
-faiss-cpu==1.8.0.post1
 scikit-learn==1.5.2
 rank-bm25==0.2.2
-tiktoken==0.7.0
 transformers==4.44.2
 PyPDF2==3.0.1
+streamlit==1.28.1
 pandas>=2.1,<2.3
+faiss-cpu==1.7.4
+tiktoken==0.7.0
 rich==13.7.1
 markdown-it-py==4.0.0
 mdurl==0.1.2
+
 
 
